@@ -1,0 +1,25 @@
+/**
+ * Setup base skeleton and default styles for layout.
+ */
+body {
+	background-color: #176895;
+}
+
+.main-panel {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-panel .panel-header {
+	height: 70px;
+	color: white;
+}
+.main-panel .panel-header,
+.main-panel .main-content {
+	margin: 10px 8px 0px 14px;
+}
+/**
+ * Main Content
+ */
+.main-panel .main-content {
+    color: white;
+}
