@@ -14,10 +14,10 @@
         </div> <!-- End of panel-header -->
         <div class="main-content">
             <div class="weather-form-panel">
-               <form class="weather-search-form" action="search">
+               <form class="weather-search-form" action="getWeather" method="get">
                     <label for="searchByZip">Enter Zip Code: </label>
-                    <input type="text" value="Search" />
-                    <input type="button" value="Search" />
+                    <input name="zipCode" type="text" value="Search" />
+                    <input type="submit" value="Search" />
                </form>
             </div>
         </div> <!-- End of main-content -->

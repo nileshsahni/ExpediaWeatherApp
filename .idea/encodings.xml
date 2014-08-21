@@ -5,6 +5,9 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/resources_app.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/applicationContext-test.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/log4j.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/resources_app.properties" charset="UTF-8" />
   </component>
 </project>
 

@@ -38,6 +38,11 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
@@ -65,6 +70,12 @@
             <version>1.9.13</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
@@ -90,7 +101,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
-                    <include>application*.properties</include>
+                    <include>resources_app*.properties</include>
                 </includes>
                 <targetPath>${project.basedir}/target/test-classes/config/</targetPath>
             </resource>
