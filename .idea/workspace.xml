@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be91fbca-af5e-4657-bc0e-6d4b3cef5dc4" name="Default" comment="Updated code with test cases.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/data/11111.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/data/94117.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/expedia/weatherapp/client/RESTClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/expedia/weatherapp/controller/WeatherAppControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/expedia/weatherapp/service/WeatherAppServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/expedia/weatherapp/model/WeatherRequestTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" />
-      <change type="DELETED" beforePath="E:\expedia\ExpediaWeatherApp\src\main\webapp\resources\js\common\jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\expedia\ExpediaWeatherApp\src\test\it\com\expedia\weatherapp\client\RESTClientTest.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\expedia\ExpediaWeatherApp\src\test\resources\log4j.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/common/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/common/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpediaWeatherApp.iml" afterPath="$PROJECT_DIR$/ExpediaWeatherApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/service/IWeatherAppService.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/service/IWeatherAppService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/client/RESTClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/client/RESTClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/controller/WeatherAppController.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/controller/WeatherAppController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/service/WeatherAppService.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/service/WeatherAppService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/model/WeatherRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/expedia/weatherapp/model/WeatherRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/app.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/log4j.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    <list default="true" id="be91fbca-af5e-4657-bc0e-6d4b3cef5dc4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\expedia\ExpediaWeatherApp\src\test\ut\com\expedia\weatherapp\client\TestRESTClient.java" afterPath="$PROJECT_DIR$/src/test/it/com/expedia/weatherapp/client/TestRESTClient.java" />
     </list>
     <ignored path="weatherapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -941,7 +910,11 @@
       <created>1408639540932</created>
       <updated>1408639540932</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated code with test cases.">
+      <created>1408875092260</created>
+      <updated>1408875092260</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
