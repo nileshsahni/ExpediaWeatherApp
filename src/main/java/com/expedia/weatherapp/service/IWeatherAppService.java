@@ -1,5 +1,6 @@
 package com.expedia.weatherapp.service;
 
+import com.expedia.weatherapp.model.WeatherRequest;
 import com.expedia.weatherapp.model.WeatherResponse;
 import org.springframework.stereotype.Service;
 
@@ -8,5 +9,5 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface IWeatherAppService {
-    public WeatherResponse getWeatherByZipCode(String zipCode);
+    public WeatherResponse getWeatherByZipCode(WeatherRequest weatherRequest);
 }

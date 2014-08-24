@@ -1,25 +1,17 @@
 /**
  * Setup base skeleton and default styles for layout.
  */
-body {
-	background-color: #176895;
-}
-
 .main-panel {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-panel .panel-header {
-	height: 70px;
-	color: white;
+.main-panel .error {
+	color: red;
 }
-.main-panel .panel-header,
-.main-panel .main-content {
-	margin: 10px 8px 0px 14px;
+
+.main-panel label {
+	font-weight: bold;
 }
-/**
- * Main Content
- */
-.main-panel .main-content {
-    color: white;
+.main-panel .weather-data-panel {
+    margin: 25px 10px 0px 0px;
 }

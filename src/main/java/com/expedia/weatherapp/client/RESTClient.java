@@ -23,15 +23,32 @@ public class RESTClient implements IRESTClient {
 
     @Value("${weather.service.json.url}")
     private String serviceURI;
+
     @Value("${weather.service.key}")
-    private String wgKey;
+    private String apiKey;
 
     @Override
     public WeatherResponse getJSONResponse(WeatherRequest request) {
-        logger.debug("Start | Enter getJSONResponse");
-        ResponseEntity<WeatherResponse> response = this.restTemplete.exchange(this.serviceURI, HttpMethod.GET, null, WeatherResponse.class, this.wgKey, request.getZipCode());
+        logger.info("Start | Enter getJSONResponse");
+        ResponseEntity<WeatherResponse> response = this.restTemplete.exchange(this.serviceURI, HttpMethod.GET, null, WeatherResponse.class, this.apiKey, request.getZipCode());
         WeatherResponse weatherResponse = response.getBody();
-        logger.debug("End | Enter getJSONResponse");
+        logger.info("End | Enter getJSONResponse");
         return weatherResponse;
+    }
+
+    public String getServiceURI() {
+        return serviceURI;
+    }
+
+    public void setServiceURI(String serviceURI) {
+        this.serviceURI = serviceURI;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 }

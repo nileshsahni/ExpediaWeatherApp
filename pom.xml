@@ -5,7 +5,7 @@
     <artifactId>weather</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>weather Maven Webapp</name>
+    <name>Expedia Weather Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
         <java-version>1.6</java-version>
@@ -43,6 +43,11 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.2.0.Final</version>
+        </dependency>
+        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
@@ -62,6 +67,17 @@
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>${commons-httpclient-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
         <!-- Jackson JSON Mapper -->
         <dependency>
@@ -88,50 +104,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <finalName>weather</finalName>
         <defaultGoal>install</defaultGoal>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <targetPath>${project.basedir}/target/classes/</targetPath>
-            </resource>
-            <!--copy properties to test-classes in target to execute junit property comparison tests -->
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>resources_app*.properties</include>
-                </includes>
-                <targetPath>${project.basedir}/target/test-classes/config/</targetPath>
-            </resource>
-        </resources>
         <plugins>
-            <plugin>
-                <groupId>com.samaxes.maven</groupId>
-                <artifactId>maven-minify-plugin</artifactId>
-                <version>1.3.5</version>
-
-                <executions>
-                    <execution>
-                        <id>weatherapp</id>
-                        <phase>prepare-package</phase>
-                        <configuration>
-                            <jsSourceDir>./resources/js/</jsSourceDir>
-                            <jsTargetDir>./resources/min/js/</jsTargetDir>
-                            <jsSourceFiles>
-                                <jsSourceFile>app/SearchWeather.js</jsSourceFile>
-                                <jsSourceFile>app/WeatherInfo.js</jsSourceFile>
-                                <jsSourceFile>app/weather.js</jsSourceFile>
-                            </jsSourceFiles>
-                            <jsFinalFile>weatherapp-script.js</jsFinalFile>
-                        </configuration>
-                        <goals>
-                            <goal>minify</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>

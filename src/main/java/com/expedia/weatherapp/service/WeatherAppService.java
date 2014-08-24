@@ -19,10 +19,8 @@ public class WeatherAppService implements IWeatherAppService {
     private IRESTClient restClient;
 
     @Override
-    public WeatherResponse getWeatherByZipCode(String zipCode) {
-        logger.debug("Start | getWeatherByZipCode Zip Code: " + zipCode);
-        WeatherRequest request = new WeatherRequest();
-        request.setZipCode(zipCode);
-        return this.restClient.getJSONResponse(request);
+    public WeatherResponse getWeatherByZipCode(WeatherRequest weatherRequest) {
+        logger.info("getWeatherByZipCode Zip Code: " + weatherRequest.getZipCode());
+        return this.restClient.getJSONResponse(weatherRequest);
     }
 }

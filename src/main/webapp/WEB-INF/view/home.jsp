@@ -1,29 +1,55 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Weather Service</title>
+    <title>Expedia Weather Service</title>
     <link href="resources/css/app.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div class="main-panel">
         <div class="panel-header">
-            <h2>Weather Service</h2>
+            <h2>Expedia Weather Service</h2>
         </div> <!-- End of panel-header -->
         <div class="main-content">
             <div class="weather-form-panel">
-               <form class="weather-search-form" action="getWeather" method="get">
+                 <form:form action="getWeather" method="POST" commandName="weatherRequest">
                     <label for="searchByZip">Enter Zip Code: </label>
-                    <input name="zipCode" type="text" value="Search" />
-                    <input type="submit" value="Search" />
-               </form>
-            </div>
+                    <form:input path="zipCode" />
+                    <input type="submit"/><br/>
+                    <form:errors path="zipCode" cssClass="error" />
+               </form:form>
+            </div> <!-- End of weather-form-panel -->
+            <c:if test="${not empty weatherResponse}">
+                <div class="weather-data-panel">
+                    <table border="1">
+                        <tr>
+                            <th colspan="2" align="center">
+                                <h2>Weather by ZIP Code</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><label>Zip Code</label></td>
+                            <td>${weatherRequest.zipCode}</td>
+                        </tr>
+                        <tr>
+                            <td><label>State Name</label></td>
+                            <td>${weatherResponse.current_observation.observation_location.state}</td>
+                        </tr>
+                        <tr>
+                            <td><label>City Name</label></td>
+                            <td>${weatherResponse.current_observation.observation_location.city}</td>
+                        </tr>
+                        <tr>
+                            <td><label>Temperature (F)</label></td>
+                            <td>${weatherResponse.current_observation.temp_f}</td>
+                        </tr>
+                    </table>
+                </div> <!-- End of weather-data-panel -->
+            </c:if>
         </div> <!-- End of main-content -->
     </div> <!-- End of main-panel -->
-
-    <!-- JS Includes -->
-    <script src="resources/js/common/jquery-1.11.1.min.js"></script>
 </body>
 </html>
